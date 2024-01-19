@@ -1,11 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <jsp:include page="NavBar.jsp" />
+<%
+String msg = (String) request.getAttribute("msg");
+%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Person Management Application</title>
+<title>Add Person Page</title>
 <style type="text/css">
 body {
 	background-image:
@@ -15,10 +18,27 @@ body {
 </style>
 </head>
 <body>
-
 	<div align="center">
-		<h1>Welcome to Person Management Application</h1>
-	</div>
+		<form action="./add" method="post">
+			<fieldset>
+				<legend>Add Person Details</legend>
+				<table>
+					<tr>
+						<td>Name</td>
+						<td><input type="text" name="name"></td>
+					</tr>
+				</table>
+			</fieldset>
+			<input type="submit" value="ADD">
+		</form>
 
+		<%
+		if (msg != null) {
+		%>
+		<h3><%=msg%></h3>
+		<%
+		}
+		%>
+	</div>
 </body>
 </html>

@@ -39,12 +39,8 @@ li a:hover {
 </head>
 <body>
 	<ul>
-		<li><a style="color: white;" href="./logout">Logout</a></li>
-		<li><a style="color: white;" href="./search">Search Student</a></li>
-		<li><a style="color: white;" href="./add">Add Student</a></li>
-		<li><a style="color: white;" href="./update">Update Student</a></li>
-		<li><a style="color: white;" href="./remove">Remove Student</a></li>
-		<li><a style="color: white;" href="./home">Home</a></li>
+		<li><a style="color: white;" href="./add">Add Person</a></li>
+		<li><a style="color: white;" href="./search">Search Person</a></li>	
 	</ul>
 </body>
-</html>
+</html> 
